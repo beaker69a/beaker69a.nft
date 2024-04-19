@@ -1,0 +1,14 @@
+{
+"title":["size","Threads","Outer Tap Size","Drill","type"],
+"fields":["Size", "Threads", "MM_75", "Outer", "Drill", "SAE_50", "style"],
+              "M6":[
+			 {"Size":"M6" , "Threads":"1.0", "Outer":"10 X 1.25","Drill":"8.75 (11/32)","Style":"Adapter"},
+	         {"Size":"M6" , "Threads":"1.0","Outer":"8X 1.0", "Drill":"7 (J)","Style":"Recoil Spring"}
+	      ],
+              "M8":[
+			 {"Size":"M8" , "Threads":"1.25","Outer":"12 X 1.25","Drill":"10.8(27/64)","Style":"Adapter"}
+	      ],
+              "M10":[
+			 {"Size":"M10" , "Threads":"1.5","Outer":"14 X 1.5","Drill":"12.50 (1/2)","Style":"Adapter"}
+	      ]
+}

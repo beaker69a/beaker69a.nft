@@ -1,0 +1,21 @@
+{
+		"MainTitle":"Taper Pipe",
+		"title":["Thread Size","Tap Drill Size"],
+		"fields":["Size","Drill"],
+ 	      "All":[
+			 {"Size":"1/16-27", "Drill":"D"},
+	         {"Size":"1/8-27", "Drill":"R"},
+	         {"Size":"1/4-18", "Drill":"7/16"},
+	         {"Size":"3/8-18", "Drill":"37/64"},
+	         {"Size":"1/2-14", "Drill":"45/64"},
+	         {"Size":"3/4-14", "Drill":"59/64"},
+	         {"Size":"1-11-1/2", "Drill":"1-5/32"},
+	         {"Size":"1-1/4-11-1/2", "Drill":"1-1/2"},
+	         {"Size":"1-1/2-11-1/2", "Drill":"1-47/64"},
+	         {"Size":"2-11-1/2", "Drill":"2-7/32"},
+	         {"Size":"2-1/2-8", "Drill":"2-5/8"},
+	         {"Size":"3-8", "Drill":"3-1/4"},
+	         {"Size":"3-1/2-8", "Drill":"3-3/4"},
+	         {"Size":"4-8", "Drill":"4-1/4"}
+              ]
+}

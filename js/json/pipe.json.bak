@@ -1,0 +1,64 @@
+{
+	  "MainTitle":"Standard Pipe",
+      "title":["Pipe Size","NPT & NPTF<br>W/O Reamer", "NPT & NPTF<br>With Reamer", "NPSM","NPSC","NPSF"],
+	  "fields":["PSize","oReam","wReam","NPSM","NPSC","NPSF"],
+	  "All":[
+			"1/16":[
+				{"PSize":"1/16-27", "oReam":"C .242", "wReam":"A .234", "NPSM":"-", "NPSC":"1/4 .250", "NPSF":"D .246"}
+			],
+			"1/8":[
+				{"PSize":"1/8-27", "oReam":"Q .332", "wReam":"21/64", "NPSM":"T .358", "NPSC":"Q .3322", "NPSF":"R .339"}
+			],
+			"1/4":[
+				{"PSize":"1/4-18", "oReam":"7/16", "wReam":"27/64", "NPSM":"15/32", "NPSC":"7/16", "NPSF":"7/16"}
+			],
+			"3/8":[
+				{"PSize":"3/8-18", "oReam":"9/16", "wReam":"9/16", "NPSM":".603(special)", "NPSC":"37/64", "NPSF":"37/64"}
+			],
+			"1/2":[
+				{"PSize":"1/2-14", "oReam":"45/64", "wReam":"11/16", "NPSM":"19 mm", "NPSC":"18 mm", "NPSF":"18 mm"}
+			],
+			"3/4":[
+				{"PSize":"3/4-14", "oReam":"29/32", "wReam":"57/64", "NPSM":"61/64", "NPSC":"59/64", "NPSF":"59/64"}
+			],
+			"1-11-1/2":[
+				{"PSize":"1-11-1/2", "oReam":"1 9/64", "wReam":"1 1/8", "NPSM":"1 13/16", "NPSC":"1 5/32", "NPSF":"1 5/32"}
+			],
+	"1-1/4-11-1/2":[
+	  	 {"PSize":"1-1/4-11-1/2", "oReam":"1 31/64", "wReam":"1 15/32", "NPSM":"1 35/64", "NPSC":"1 1/2", "NPSF":"-"}
+	],
+	"1-1/2-11-1/2":[
+	  	 {"PSize":"1-1/2-11-1/2", "oReam":"1 23/32", "wReam":"1 45/64", "NPSM":"1 25/32", "NPSC":"1 47/64", "NPSF":"-"}
+	],
+	"2-11-1/2":[
+	  	 {"PSize":"2-11-1/2", "oReam":"2 3/16", "wReam":"2 11/64", "NPSM":"2 1/4", "NPSC":"2 13/64", "NPSF":"-"}
+	],
+	"2-1/2-8":[
+	  	 {"PSize":"2-1/2-8", "oReam":"2-5/8", "wReam":"", "NPSM":"", "NPSC":"2 21/32", "NPSF":""}
+	],
+	"3-8":[
+	   	{"PSize":"3-8", "oReam":"3-1/4", "wReam":"", "NPSM":"", "NPSC":"3 9/32", "NPSF":""}
+	],
+	"3-1/2-8":[
+	  	 {"PSize":"3-1/2-8", "oReam":"3-3/4", "wReam":"", "NPSM":"", "NPSC":"3 25/32", "NPSF":""}
+	],
+	"4-8":[
+	  	 {"PSize":"4-8", "oReam":"4-1/4", "wReam":"", "NPSM":"", "NPSC":"4 9/32", "NPSF":""}
+	]
+	],
+	      "Alll" :[
+		["NPT",	"National Pipe Thread (tapered)"],
+		["FPT",	"Female Pipe Thread (interchangeable with NPT)"],
+		["FIP",	"Female Iron Pipe (interchangeable with NPT)"],
+		["MPT",	"Male Pipe Thread (interchangeable with NPT)"],
+		["MIP",	"Male Iron Pipe (interchangeable with NPT)"],
+		["IPS",	"Iron pipe size (interchangeable with NPT)"],
+		["PTF",	"SAE short taper pipe thread"],
+		["NPTF", "National Pipe Thread Fuel (American National taper pipe thread for dryseal pressure-tight joints)"],
+		["NPSM","National Pipe Straight Mechanical (American National straight pipe thread for mechanical joints)"],
+		["NPSI", "American National straight intermediate pipe thread"],
+		["GHT", "Garden Hose thread"],
+		["NST ", "National Standard Thread (Fire Hose thread)"],
+		["BSPT", "British Standard taper pipe thread (metric dimensions)"]
+	      ]
+}

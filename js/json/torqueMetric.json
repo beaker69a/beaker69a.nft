@@ -1,0 +1,28 @@
+{
+		"title":["Size","Grade 8.8","Grade 10.9","Grade 12.9","Allen"],
+		"fields":["Size","Grade_8","Grade_10","Grade_12","Allen"],
+	     "M6":[
+			{"Size":"M6 x 1.0", "Grade_8":"7", "Grade_10":"11", "Grade_12":"12", "Allen":"12"}
+	     ],
+	     "M8":[
+	         {"Size":"M8 x 1.25", "Grade_8":"17", "Grade_10":" 26", "Grade_12":" 29", "Allen":" 29"}
+	     ],
+	     "M10":[
+	         {"Size":"M10 x 1.5", "Grade_8":" 34", "Grade_10":" 51", "Grade_12":" 57", "Allen":" 57"}
+	     ],
+	     "M12":[
+	         {"Size":"M12 x 1.75", "Grade_8":" 59", "Grade_10":" 88", "Grade_12":" 99", "Allen":" 99"}
+	     ],
+	     "M14":[
+	         {"Size":"M14 x 2", "Grade_8":" 94", "Grade_10":" 139", "Grade_12":" 158", "Allen":" 158"}
+	     ],
+	     "M16":[
+	         {"Size":"M16 x 2", "Grade_8":" 146", "Grade_10":" 210", "Grade_12":" 250", "Allen":" 250"}
+	     ],
+	     "M18":[
+	         {"Size":"M18 x 2.5", "Grade_8":" 210", "Grade_10":" 285", "Grade_12":" 341", "Allen":" 341"}
+	     ],
+	     "M20":[
+	         {"Size":"M20 x 2.5", "Grade_8":" 292", "Grade_10":" 401", "Grade_12":" 489", "Allen":" 489"}
+	     ]
+}

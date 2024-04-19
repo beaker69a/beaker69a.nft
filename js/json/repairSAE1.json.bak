@@ -1,0 +1,20 @@
+{
+"title":[
+	         ["ThreadRepair","SAE"],"
+	         ["Size","Threads","Tap Size","Drill","type"]
+	      ],
+              "#10":[
+			  {"Size":"#10", "Threads":"32", "MM_75":"", "Outer":"5/16 X 18(small) or 3/8 X 16", "Drill":"F(.257) or 1/4(.250)","style":"Adapter"},
+			  {"Size":"#10", "Threads":"32",  "MM_75":"", "Outer":"3/8 X 16(big)", "Drill":"5/16","style":"Adapter"},
+			  {"Size":"#10", "Threads":"24",  "MM_75":"", "Outer":"5/16 X 16", "Drill":"5/16","style":"EZ Lock"}
+	      ],
+              "1/4":[
+			  {"Size":"1/4", "Threads":"28", "MM_75":"", "Outer":" ", "MM_50":"", "Drill":""},
+			  {"Size":"1/4", "Threads":"20", "MM_75":"", "Outer":" ", "MM_50":"", "Drill":" "}
+	      ],
+              "3/8":[
+			 {"Size":"3/8", "Threads":"16", "MM_75":"", "Outer":" ", "MM_50":"", "Drill":" "},
+	         {"Size":"3/8", "Threads":"24",  "MM_75":"", "Outer":" ", "MM_50":"", "Drill":" "},
+	         {"Size":"3/8", "Threads":"32",  "MM_75":"", "Outer":" ", "MM_50":"", "Drill":" "}
+	      ]
+}

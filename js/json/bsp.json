@@ -1,0 +1,21 @@
+{
+		"MainTitle":"BSP - BRITISH STANDARD PIPE",
+		"title":["Tap Size","Drill Size(MM)","T.P.I"],
+		"fields":["TSize","DSize","tpi"],
+	    "All":[
+			 {"TSize":"1/16 BSP", "DSize":"6.6", "tpi":"28"},
+	         {"TSize":"1/8 BSP", "DSize":"8.75", "tpi":"28"},
+	         {"TSize":"1/4 BSP", "DSize":"11.75", "tpi":"19"},
+	         {"TSize":"3/8 BSP", "DSize":"15.25", "tpi":"19"},
+	         {"TSize":"1/2 BSP", "DSize":"19", "tpi":"14"},
+	         {"TSize":"5/8 BSP", "DSize":"21", "tpi":"14"},
+	         {"TSize":"3/4 BSP", "DSize":"24.5", "tpi":"14"},
+	         {"TSize":"7/8 BSP", "DSize":"28.25", "tpi":"14"},
+	         {"TSize":"1 BSP", "DSize":"30.75", "tpi":"11"},
+	         {"TSize":"1-1/4 BSP", "DSize":"39.5", "tpi":"11"},
+	         {"TSize":"1-3/8 BSP", "DSize":"41.5", "tpi":"11"},
+	         {"TSize":"1-1/2 BSP", "DSize":"45.25", "tpi":"11"},
+	         {"TSize":"1-3/4 BSP", "DSize":"51", "tpi":"11"},
+	         {"TSize":"2 BSP", "DSize":"57.25", "tpi":"11"}
+	    ]
+}
