@@ -18,7 +18,79 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
   background-size: 47px;
 }
 </style>
+<style>
+	.tab_content div{
+		width:300px;
+		display:none;
+	}
+	.tab_content show{
+		display:block;
+	}
+	.tabs
+    {
+        border-bottom: 1px solid gray;
+        margin-bottom: 1em;
+		width:300px;
+    }
     
+    .tabs ul
+    {
+        padding: 3px 0;
+        margin-left: 0;
+        margin-top: 1px;
+        margin-bottom: 0;
+        font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+        list-style-type: none;
+        text-align: left; 
+    }
+    
+    .tabs li
+    {
+        display: inline-block;
+        margin: 0 0 15px 0;
+    
+        /* ie7 hacks */
+        zoom:1;
+        *display: inline;
+        _height: 20px
+    }
+    
+    .tabs li a
+    {
+        text-decoration: none;
+        padding: 3px 7px;
+        margin-right: 3px;
+        border: 1px solid #778;
+        color: Blue;
+
+    }
+    
+    .tabs li a:hover
+    {
+        text-decoration: none;
+        color:#FF0000;
+    }
+    
+    .tabs li.selected
+    {
+        position: relative;
+        top: 1px;
+        text-decoration: none;
+        padding: 3px 7px;
+        margin-right: 3px;
+        border: 1px solid #778;
+        color: #2d2b2b;
+
+        border-bottom-color: white;
+    }
+    
+    .tabs li.selected a:hover
+    { /*selected main tab style */
+        text-decoration: none;
+		backgroud-color: #000
+    }
+			</style>
+    <script src="js/tapCalc.js"></script>
 </head>
 <body>
 
@@ -26,12 +98,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 <!-- Main page https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_mail&stacked=h -->
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="images/PXL.png" style="width:60%;"></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="./images/PXL.png" style="width:60%;"></a>
   <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
   class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="openMain('requests')" id="firstTab">Login <i class="w3-padding fa fa-lock"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="openMain('requests')" id="firstTab">Main  <i class="w3-padding fa fa-lock"></i></a>
 </nav>
 <div id="id01" class="w3-modal" style="z-index:4">
+
 </div>
 
 <!-- Overlay effect when opening the side navigation on small screens -->
@@ -49,11 +122,182 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 	  <span>Lets do some work </span>
     </div>
     <div class="w3-container w3-white w3-padding-16">
-     
             <p>
-               More work to come
+              <div class="tabs">
+                <ul>
+                    
+                    <li><a class="tabItem selected" HREF="javascript:changeTab('TAB1')">Tap</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB2')">Repair</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB3')">NSPT</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB4')">Pipe</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB5')">NPT</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB6')">NPS</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB7')">BSP</a>
+                    </li>
+                    <li><a class="tabItem" HREF="javascript:changeTab('TAB8')">Torque</a>
+                    </li>
+
+                </ul>
+    </div>
+    <div class="tab_content">
+			 <input type="text" name="collector" id="collector">
+			 <div id="TAB1">
+      <h2>Normal Drill Tap Size</h2>
+      <p>
+	  <p>Examples</p>
+	 <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	  <p><button onclick="CalcTapSize('SizeOut','Normal')">Get tap size</button></p>
+	 <p><span id="SizeOut"></span></p>
+	 
+	 
+
+	  </p>
+    </div>
+    <div id="TAB2">
+      <h2>Thread Repair</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	 <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	 <p><button onclick="CalcTapSize('RepairOut','ThreadRepair')">Get tap size</button></p>
+	 <p><span id="RepairOut"></span></p>
+	 
+	  </p>
+	  </div>
+    <div id="TAB3">
+      <h2>National Standard Pipe Thread</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	 <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	 <p><button onclick="CalcTapSize('NSPOut','NSP')">Get tap size</button></p>
+	 <p><span id="NSPOut"></span></p>
+	 
+	  </p>
+    </div>
+    <div id="TAB4">
+      <h2>Pipe</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	 <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	 <p><button onclick="CalcTapSize('PipeOut','Pipe')">Get tap size</button></p>
+	 <p><span id="PipeOut"></span></p>
+	 
+	  </p>
+    </div>
+    <div id="TAB5">
+      <h2>National Pipe Thread</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	 <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	 <p><button onclick="CalcTapSize('NPTOut','NPT')">Get tap size</button></p>
+	 <p><span id="NPTOut"></span></p>
+	 
+	  </p>
+    </div>
+	<div id="TAB6">
+      <h2>National Pipe Standard</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	  <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	  <p><button onclick="CalcTapSize('NPSOut','NPS')">Get tap size</button></p>
+	 <p><span id="NPSOut"></span></p>
+	 
+	  </p>
+    </div>
+    <div id="TAB7">
+      <h2>Brittish Standard Pipe</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	  <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	  <p><button onclick="CalcTapSize('BSPOut','BSP')">Get tap size</button></p>
+	 <p><span id="BSPOut"></span></p>
+	 
+	  </p>
+    </div>
+    <div id="TAB8">
+      <h2>Torque chart</h2>
+      <p>
+	  <p>Examples of size needed</p>
+	  <p> <ul>
+			<li> 1/4 X 20</li> 
+			<li>  1 1/4 X 20 </li>
+			<li>  #10 X 32</li>
+			<li>  M10 X 1.25</li>
+		</ul>
+	  </p>
+	  <p><button onclick="CalcTapSize('TorqueOut','Torque')">Get tap size</button></p>
+	 <p><span id="TorqueOut"></span></p>
+	 
+	  </p>
+    </div>
+    
+		  <script>
+		function CalcTapSize(out,tab){
+			valueIn = document.getElementById("collector").value
+			DecimalCalc.CalcTapSizeN(valueIn,out,tab)
+		}
+	  </script>
+      <script>
+		let menuItems = document.querySelectorAll('.tabs tabItem');
+		var allTabContent=document.querySelectorAll('.tab_content div');
+		allTabContent[0].style.display = 'block';
+		function changeTab(tab){
+			allTabContent.forEach((userItem) => {
+				userItem.style.display = 'none';
+			})
+			//console.log(allTabContent[0].id +"--"+ tab)
+			 document.getElementById(tab).style.display = 'block';
+		}
+	</script>
+	</div>
             </p>
-        
     </div>
   </div>
   
